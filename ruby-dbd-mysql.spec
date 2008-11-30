@@ -6,6 +6,7 @@ License:	Ruby License
 Group:		Development/Libraries
 Source0:	http://rubyforge.org/frs/download.php/46558/dbd-mysql-%{version}.tar.gz
 # Source0-md5:	5008ae6b668bbccff3dd25fb03624233
+Requires:	ruby-mysql
 URL:		http://rubyforge.org/projects/ruby-dbi/
 
 %description
