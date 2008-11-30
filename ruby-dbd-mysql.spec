@@ -12,7 +12,7 @@ URL:		http://rubyforge.org/projects/ruby-dbi/
 Ruby Database driver for MySQL.
 
 %prep
-%setup -n dbd-mysql-%{version}
+%setup -q -n dbd-mysql-%{version}
 
 %build
 ruby setup.rb config \
@@ -21,6 +21,7 @@ ruby setup.rb config \
 ruby setup.rb setup
 
 %install
+rm -rf $RPM_BUILD_ROOT
 ruby setup.rb install \
 	--prefix=$RPM_BUILD_ROOT
 
