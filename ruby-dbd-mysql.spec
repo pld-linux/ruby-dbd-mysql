@@ -9,6 +9,7 @@ Source0:	http://rubyforge.org/frs/download.php/46558/dbd-mysql-%{version}.tar.gz
 URL:		http://rubyforge.org/projects/ruby-dbi/
 BuildRequires:	ruby-modules
 Requires:	ruby-mysql
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Ruby Database driver for MySQL.
